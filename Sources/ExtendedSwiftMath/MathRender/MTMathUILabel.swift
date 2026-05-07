@@ -284,8 +284,8 @@ public class MTMathUILabel : MTView {
         }
 
         // Use the effective width for layout
-        let effectiveWidth = _preferredMaxLayoutWidth > 0 ? _preferredMaxLayoutWidth : bounds.size.width
-        let availableWidth = effectiveWidth - contentInsets.left - contentInsets.right
+        let effectiveWidth = _preferredMaxLayoutWidth > 0 ? _preferredMaxLayoutWidth : 0
+        let availableWidth = effectiveWidth > 0 ? effectiveWidth - contentInsets.left - contentInsets.right : 0
 
         _displayList = MTTypesetter.createLineForMathList(_mathList, font: self.font, style: currentStyle, maxWidth: availableWidth)
         
