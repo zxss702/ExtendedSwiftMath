@@ -15,9 +15,9 @@ public class MTFontManager {
         MTFontManager()
     }()
     
-    let kDefaultFontSize = CGFloat(20)
+    public let kDefaultFontSize = CGFloat(20)
     
-    static var fontManager : MTFontManager {
+    public static var fontManager : MTFontManager {
         return manager
     }
 

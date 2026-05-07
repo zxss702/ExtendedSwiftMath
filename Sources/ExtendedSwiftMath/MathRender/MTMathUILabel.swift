@@ -331,8 +331,6 @@ public class MTMathUILabel : MTView {
         var maxWidth: CGFloat = 0
         if _preferredMaxLayoutWidth > 0 {
             maxWidth = _preferredMaxLayoutWidth - contentInsets.left - contentInsets.right
-        } else if size.width > 0 {
-            maxWidth = size.width - contentInsets.left - contentInsets.right
         }
 
         var displayList:MTMathListDisplay? = nil
